@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Comentário</title>
+    <link rel="stylesheet" href="./SRC/CSS/comment.css">
+    <link rel="stylesheet" href="./SRC/CSS/Reset.css">
+</head>
+<body>
+    <header>
+        <h1>Feedback<span class="highlight">CELL</span></h1>
+        <div class="head">
+            <button><a href="./Principal.html">HOME</a></button>
+            <button><a href="./Login.html">LOGIN</a></button>
+        </div>
+    </header>
+    <div class="container">
+        <div id="nome-celular"></div>
+        <div id="imagem-celular"></div>
+        <div id="container-table"></div>
+        <form action="./comment.html" method="POST">
+            <label for="comentario">Comentários:</label><br>
+            <textarea class="resize" id="comentario" name="comentario"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <script src="./SRC/js/Script_comment.js"></script>
+</body>
+</html>
