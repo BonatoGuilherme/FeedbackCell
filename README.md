@@ -9,6 +9,14 @@ FeedBackCell é um projeto para criação de catálogos, inicialmente focado em 
 - Comentários em itens catalogados
 - Registro de todas as interações em banco de dados (MySQL)
 - Possibilidade de adaptação para outros tipos de catálogo
+- 
+## Estrutura do Projeto
+
+Este projeto foi desenvolvido utilizando **Node.js** e segue a arquitetura **MVC (Model-View-Controller)**.
+
+- **Model:** Responsável pela estrutura e manipulação dos dados.
+- **View:** Responsável pela apresentação das informações (em projetos Node.js para API, normalmente são respostas JSON).
+- **Controller:** Responsável pela lógica de controle, recebendo requisições, processando dados (usando o Model) e retornando respostas (usando a View).
 
 ## Pré-requisitos
 
