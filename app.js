@@ -40,9 +40,10 @@ app.use(session({
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'login.html'));
 });
+
 // Usa as rotas definidas no arquivo 'routes/celulares.js' para o caminho '/celulares'
 app.use('/celulares', require('./routes/celulares'));
-// Usa as rotas definidas no arquivo 'routes/celulares.js' para o caminho '/celulares'
+// Usa as rotas definidas no arquivo 'routes/celulares.js' para o caminho '/usuarios'
 app.use('/usuarios', require('./routes/usuarios'));
 
 // Rota para listar celulares com caminho completo das imagens (API)
