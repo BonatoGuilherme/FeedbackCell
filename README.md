@@ -37,6 +37,7 @@ Este projeto foi desenvolvido utilizando **Node.js** e segue a arquitetura **MVC
     ```bash
     npm run dev
     ```
+5. Utilize o arquivo Usuarios.csv para iniciar uma seção na pagina 
 > **Observação:** O projeto ainda não está completo.
 
 ## Exemplos de uso
