@@ -1,5 +1,6 @@
 const db = require('../database/db');
 const login = (req, res) => {
+    console.log(req.body)
     const { email, senha } = req.body;
     if (!email || !senha) {
         return res.status(400).json({ error: 'Preencha todos os campos' });
@@ -13,8 +14,8 @@ const login = (req, res) => {
             return res.status(401).json({ error: 'Senha incorreta.' });
         }
         req.session.user = user;
-        // Redireciona para a página principal após login bem-sucedido
-        res.redirect('/index');
+        // Login bem-sucedido, retorna resposta de sucesso
+        res.json({ success: true, message: 'Login realizado com sucesso.' });
     });
 }
 module.exports = { login };
